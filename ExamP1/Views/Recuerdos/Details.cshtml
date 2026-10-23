@@ -1,0 +1,50 @@
+﻿@model ExamP1.Models.Recuerdo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Recuerdo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sintezoide.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sintezoide.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TituloRecuerdo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TituloRecuerdo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoRecuerdo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoRecuerdo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Claridad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Claridad)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

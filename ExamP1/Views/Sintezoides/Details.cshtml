@@ -1,0 +1,50 @@
+﻿@model ExamP1.Models.Sintezoide
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sintezoide</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NivelIa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NivelIa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FuenteEnergia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FuenteEnergia)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
